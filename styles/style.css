@@ -52,11 +52,11 @@ h1 {
     font-weight: 300;
 }
 
-div.weather_info_temp{
+div.weather__info__temp {
     padding: 4rem;
 }
 
-div.weather_info {
+div.weather__info {
     display: flex;
 
     justify-content: space-evenly;
@@ -64,3 +64,9 @@ div.weather_info {
 
     margin: 5rem 0;
 }
+
+div.weather__temp {
+    display: flex;
+    justify-content: space-evenly;
+}
+

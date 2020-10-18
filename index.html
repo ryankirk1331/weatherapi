@@ -5,16 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bb8fd4baf4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
+    <!-- ************************************* 500px or thinner ********************** -->
+    <link 
+        rel="stylesheet" 
+        media="screen and (max-width: 500px)"
+        href="7.z500px.css"
+    >
+    <!-- ********************************* 600px or thinner ********************** -->
+    <link 
+        rel="stylesheet" 
+        media="screen and (max-width: 600px)"
+        href="7.z600px.css"
+    >
+    <!-- **************************** 800px or thinner ************************* -->
+    <link 
+        rel="stylesheet" 
+        media="screen and (max-width: 800px)"
+        href="7.z800px.css"
+    >
+    <!-- *********************** 900px or wider **************************** -->
+    <link
+        rel="stylesheet"
+        media="screen and (min-width: 900px)" 
+        href="7.z900px.css"
+    >
     <title>Weather API</title>
 </head>
 <body>
     <section id="weather">
         <h1>Sydney, Australia</h1>
-        <div class="weather_info_temp">
+        <div class="weather__info__temp">
+            <div class="weather__info">
 
-            <div class="weather_info">
-
-                <div class="weather_info--date">
+                <div class="weather__info--date">
                     <p>Thursday, Apr 30</p>
                     <p>Sunny</p>
                     <div class="weather__info--date__icon__temp">
@@ -23,12 +46,63 @@
                     </div>
                 </div>
 
-                <div class="weather_info--data">
+                <div class="weather__info--data">
                     <p>Percipitation: 10%</p>
                     <p>Humidity: 5%</p>
                     <p>Wind: 4 kpm NW</p>
                 </div>
+
             </div>
+            
+            
+            <div class="weather__temp">
+                <div class="weather__temp--monday">
+                    <p>Monday</p>
+                    <i class="fas fa-cloud-sun"></i>
+                    <p>23 <sup>&#8451;</sup><p>
+                    <p>18 <sup>&#8451;</sup> </p>
+                </div>
+                <div class="weather__temp--monday">
+                    <p>Tuesday</p>
+                    <i class="fas fa-sun"></i>
+                    <p>26 <sup>&#8451;</sup><p>
+                    <p>21 <sup>&#8451;</sup> </p>
+                </div>
+                <div class="weather__temp--monday">
+                    <p>Wednesday</p>
+                    <i class="fas fa-wind"></i>
+                    <p>20 <sup>&#8451;</sup><p>
+                    <p>16 <sup>&#8451;</sup> </p>
+                </div>
+                <div class="weather__temp--monday">
+                    <p>Thursday</p>
+                    <i class="fas fa-cloud-sun-rain"></i>
+                    <p>18 <sup>&#8451;</sup><p>
+                    <p>16 <sup>&#8451;</sup> </p>
+                </div>
+                <div class="weather__temp--monday">
+                    <p>Friday</p>
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                    <p>15 <sup>&#8451;</sup><p>
+                    <p>11 <sup>&#8451;</sup> </p>
+                </div>
+                <div class="weather__temp--monday">
+                    <p>Saturday</p>
+                    <i class="fas fa-cloud-sun"></i>
+                    <p>14 <sup>&#8451;</sup><p>
+                    <p>10 <sup>&#8451;</sup> </p>
+                </div>
+                <div class="weather__temp--monday">
+                    <p>Sunday</p>
+                    <i class="fas fa-cloud-meatball"></i>
+                    <p>23 <sup>&#8451;</sup><p>
+                    <p>18 <sup>&#8451;</sup> </p>
+                </div>
+            
+            
+            </div>
+            
+
         </div>
     </section>
 </body>
